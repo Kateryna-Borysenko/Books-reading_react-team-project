@@ -1,8 +1,13 @@
 .stats {
-  width: 270px;
-  border: 1px black solid;
   display: flex;
   flex-direction: column;
+  padding: 0 10px 0 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /* .flexGrow {
@@ -10,25 +15,33 @@
 } */
 .stat {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .stat {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .stat {
+    justify-content: center;
+  }
+}
 
 .gray {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 38px;
   color: #898F9F;
-  font-family: 'Montserrat';
-  font-style: normal;
+}
 
+.gray:not(:last-child) {
+  margin-right: 20px;
 }
 
 .black {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 38px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  color: #242A37
+  color: #242A37;
+}
+
+.black:not(:last-child) {
+  margin-right: 20px;
 }

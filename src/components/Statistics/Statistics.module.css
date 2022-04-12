@@ -1,19 +1,19 @@
 .resultsBox {
     width: 270px;
-    height: 340px;
+    min-height: 340px;
     background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
     .resultsBox {
         width: 678px;
-        height: 306px;
+        min-height: 306px;
     }
   }
   @media screen and (min-width: 1280px) {
     .resultsBox {
         width: 275px;
-        height: 340px;
+        min-height: 340px;
         margin-left: 41px;
     }
   }
@@ -26,7 +26,6 @@ font-style: normal;
 font-weight: 600;
 font-size: 12px;
 line-height: 3.17;
-padding-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -109,7 +108,7 @@ display: flex;
     background-color: #FF6B08;
     color: #ffffff;
     border: none;
-    margin: 20px auto 25px auto;
+    margin: 20px auto 10px auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -132,6 +131,7 @@ display: flex;
   @media screen and (min-width: 768px) {
     .statisticsTitle {
         text-align:start;
+        padding-left: 10px;
     }
   }
 
